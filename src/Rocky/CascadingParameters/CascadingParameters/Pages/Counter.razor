@@ -6,6 +6,10 @@
 
 <p role="status">Current count: @currentCount</p>
 
+@* EventBinding : OnClick --> call IncrementCount *@
+@* No need to pass paremeters, as they're already part of this page - or class *@
+@* As razor pages are compiled into regular C# classes. *@
+
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
