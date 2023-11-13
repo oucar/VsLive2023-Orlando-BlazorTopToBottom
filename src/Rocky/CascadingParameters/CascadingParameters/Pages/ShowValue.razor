@@ -1,9 +1,15 @@
 ﻿<div>parameter: @myvalue</div>
+
+@* Two way binding *@
+@* Binding the input box into value *@
+
 <input @bind-value="value" />
 
 @code {
+  // Difference between Parameter and Cascading Parameter 
   [Parameter]
   public int myvalue { get; set; }
+
   [CascadingParameter]
   public int value { get; set; }
 }

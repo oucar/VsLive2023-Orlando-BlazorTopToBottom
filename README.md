@@ -25,4 +25,16 @@
 - .NET MAUI / .NET MAUI Blazor (Hybrid), succesor of Xamarin, could be use for Mobile. Again, single and shared codebase and it lets you leverage your web skills to build a mobile app. 
 - For back-end, it lets you leverage the stability an consistency of .NET. Lets you run apps outside the browser, it also lets you compile apps to .wasm and run on any host. So it doesn't really make a huge difference if you're just an API or heavily back-end focused developer, but at least it would make a better sense for a back-end developer when they look into a front-end implementation of a component. 
 - For Client & Server → Single-stack development. It's pretty popular in other languages (MEAN, MERN). 
-- Everything in Blazor is called Razor Component (cshtml), but now its `Abc.razor`. This is to differentiate the old Razor and Blazor Razor.
+- Everything in Blazor is called Razor Component (cshtml), but now its `Abc.razor`. This is to differentiate the old Razor and Blazor Razor. Each .razor file is essentialy been compiled into a C# class.
+- Some old razor compoenents are also built into Blazor. Compoenents work just like the components in React, Vue, etc. They work independently. Components can take `[Parameters]` that work like the props in React, meaning that same components can work in different ways in different pages.
+- Cascading Parameters: Blazor comes with a special component called CascadingValue. This component allows whatever value is passed to it to be cascaded down its component tree to all of its descendants. The descendant components can then choose to collect the value by declaring a property of the same type, decorated with the [CascadingParameter] attribute.
+- Right click into a XXXXX and hit "turn into code behind (?)", then it generates the C# class that Blazor turns .razor file into C#.
+- Blazor doesn't use MVC, it uses MVvM (list differences). 
+    - [MVC & MVVM](https://medium.com/@ankit.sinhal/mvc-mvp-and-mvvm-design-pattern-6e169567bbad)
+    - MVVM lets you pull out the business logic from the page related logic, like the click events etc.
+
+---
+### Blazor WASM Project Setup (EngineAnalyticsWebApp)
+- App Type: Blazor WebAssemly Standalone App 
+- Best practice is to isolate components such as client and server. (UI, Components, Shared for this example)
+- In modern web components, there should be modern web data-binding, reusability and cohesive chunks of functionality. 
