@@ -32,9 +32,12 @@
 - Blazor doesn't use MVC, it uses MVvM (list differences). 
     - [MVC & MVVM](https://medium.com/@ankit.sinhal/mvc-mvp-and-mvvm-design-pattern-6e169567bbad)
     - MVVM lets you pull out the business logic from the page related logic, like the click events etc.
+- Blarzorise - Robust UI component library tailored for Blazor [Documentation](https://blazorise.com/docs/components/)
 
 ---
 ### Blazor WASM Project Setup (EngineAnalyticsWebApp)
 - App Type: Blazor WebAssemly Standalone App 
 - Best practice is to isolate components such as client and server. (UI, Components, Shared for this example)
 - In modern web components, there should be modern web data-binding, reusability and cohesive chunks of functionality. 
+- Run the app first the and the second time, show metrics in Network tab in developer console.
+- Web assemblies are unique to the application, it runs once for an application then those are being saved in the cache of the website.
