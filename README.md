@@ -1,6 +1,8 @@
 ### VSM01 - Workshop: Blazor Top to Bottom
 - JavaScript was the only language that could run on the web some while ago, but now it's possible with C#, or more specifically Blazor.
 - **Polyglot Programming**: Polyglot programming is the practice of writing code in multiple languages to capture additional functionality and efficiency not available in a single language. 
+- Dependency Injection
+    - Blazor is built on top of dependency injection.
 ---
 - **Web Assembly**: WebAssembly is a type of code that can be run in modern web browsers — it is a low-level assembly-like language with a compact binary format that runs with near-native performance and provides languages such as C/C++, C# and Rust with a compilation target so that they can run on the web. It is also designed to run alongside JavaScript, allowing both to work together. It also works on the same sandbox as JavaScript. [How to use C++ on the web with Web Assembly.](https://developer.mozilla.org/en-US/docs/WebAssembly/C_to_Wasm)
     - Efficient and fast
@@ -41,3 +43,9 @@
 - In modern web components, there should be modern web data-binding, reusability and cohesive chunks of functionality. 
 - Run the app first the and the second time, show metrics in Network tab in developer console.
 - Web assemblies are unique to the application, it runs once for an application then those are being saved in the cache of the website.
+- Lazy Loading: Assets will not load until portion of app navigated to by user, it load assemblies ad-hoc to improve performance. 
+- It's also possible to call JavaScript from Blazor, and vice versa. 
+- PWA: Web application that can like an application on your machine that also can work offline. Blazor lets you do that as well.
+
+---
+### 
